@@ -1,5 +1,3 @@
-# App-v0-octo
+# App-super-go
 
 Production App for 82 Learn
-
-App uses ML tech to reduce the cost of carbon.
