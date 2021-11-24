@@ -9,6 +9,7 @@ const TagComponent = styled.div`
   color: white;
   text-align: center;
   margin-bottom: 160px;
+  background-color: gray;
 `;
 
 const Header = styled.h1`
@@ -30,22 +31,7 @@ const StyledText = styled.div`
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 `;
 
-const StyledBox = styled.div`
-  padding: 50px 10px;
-  color: white;
-  font-size: 20px;
-  margin-left: 800px;
-  margin-right: 800px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  background-color: black;
 
-  &:hover {
-    background-color: #0b1b22;
-    border-radius: 10px;
-    box-shadow: 0px 50px 50px none;
-  }
-`;
 
 class Contact extends React.Component {
   render() {
@@ -57,9 +43,9 @@ class Contact extends React.Component {
         <StyledText>
           <p>Do you have any questions?</p>
         </StyledText>
-        <StyledBox>
+  
           <p>info@82learn.com</p>
-        </StyledBox>
+    
         <StyledText></StyledText>
       </TagComponent>
     );

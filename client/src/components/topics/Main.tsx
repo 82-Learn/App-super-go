@@ -120,8 +120,8 @@ const Main = () => {
   return (
     <TagComponent>
       <Header>Dashboard</Header>
-      <Sidebar></Sidebar>
-      <Body>
+    
+      
         <div>
           <h1>Outline</h1>
           <ul>
@@ -133,7 +133,7 @@ const Main = () => {
             ))}
           </ul>
         </div>
-      </Body>
+     
     </TagComponent>
   );
 };

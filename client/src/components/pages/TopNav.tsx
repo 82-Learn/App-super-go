@@ -19,7 +19,7 @@ const NavLinks = styled.ul`
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 15px;
+    padding: 14px 15px;
     cursor: pointer;
     background-color: #010d11;
     line-height: 1em;
