@@ -31,21 +31,17 @@ const StyledText = styled.div`
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 `;
 
-
-
 class Contact extends React.Component {
   render() {
     return (
       <TagComponent>
-        <Header>
-          <h1>Contacts</h1>
-        </Header>
+        <Header>Contacts</Header>
         <StyledText>
           <p>Do you have any questions?</p>
         </StyledText>
-  
-          <p>info@82learn.com</p>
-    
+
+        <p>info@82learn.com</p>
+
         <StyledText></StyledText>
       </TagComponent>
     );

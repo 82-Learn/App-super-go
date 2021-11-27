@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Navbar = styled.div`
@@ -12,6 +13,7 @@ const Navbar = styled.div`
 const NavLinks = styled.ul`
   & li {
     float: right;
+    padding: 5px 5px;
   }
 
   & a {
@@ -23,6 +25,8 @@ const NavLinks = styled.ul`
     cursor: pointer;
     background-color: #010d11;
     line-height: 1em;
+    border: 2px solid #ff6600;
+    font-weight: bold;
 
     &:hover {
       background-color: #ff6600;
@@ -36,13 +40,13 @@ class TopNav extends React.Component {
       <Navbar>
         <NavLinks>
           <li>
-            <a href="/home">82 Learn</a>
+            <Link to="/home">82 Learn</Link>
           </li>
           <li>
-            <a href="/login">Login</a>
+            <Link to="/login">Login</Link>
           </li>
           <li>
-            <a href="/signup">SignUp</a>
+            <Link to="/signup">SignUp</Link>
           </li>
         </NavLinks>
       </Navbar>
