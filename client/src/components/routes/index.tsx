@@ -1,6 +1,5 @@
 import * as React from "react";
-import { Route, Switch } from "react-router-dom";
-
+import { Route, withRouter, Switch } from "react-router-dom";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/footer/Contact";
@@ -8,10 +7,11 @@ import Login from "../pages/login/Login";
 import Register from "../pages/login/SignUp";
 import Purpose from "../pages/footer/Purpose";
 import Main from "../topics/Main";
+import Footer from "../pages/footer/Footer";
 
-class Routes extends React.Component {
-  render() {
-    return (
+const Routes = withRouter(({ location }) => {
+  return (
+    <>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/home" component={Home} />
@@ -22,8 +22,11 @@ class Routes extends React.Component {
         <Route path="/dash" component={Main} />
         <Route component={NotFound} />
       </Switch>
-    );
-  }
-}
+      {location.pathname !== "/login" && location.pathname !== "/signup" && (
+        <Footer />
+      )}
+    </>
+  );
+});
 
 export default Routes;

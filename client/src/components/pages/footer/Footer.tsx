@@ -2,10 +2,11 @@ import * as React from "react";
 import styled from "styled-components";
 
 const StyledFooter = styled.div`
-  background-color: #010d11;
-  min-height: 100%;
+  background-color: #ff6600;
+  min-height: 10%;
   /* equal to footer height */
   margin-bottom: -142px;
+  border-radius: 10px;
 `;
 
 const Row = styled.div`
@@ -24,10 +25,10 @@ const Column = styled.div`
 
 const Heading = styled.p`
   font-size: 15px;
-  color: white;
+  color: black;
+
   margin-bottom: 40px;
   text-align: center;
-  color: #ff6600;
 `;
 
 const Container = styled.div`
@@ -46,6 +47,7 @@ const FooterLink = styled.div`
   text-align: center;
   cursor: pointer;
   padding: 8px 8px;
+  background-color: black;
 
   &:hover {
     background-color: #ff6600;

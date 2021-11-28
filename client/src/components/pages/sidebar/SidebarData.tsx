@@ -6,12 +6,12 @@ import {
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import { BiTestTube } from "react-icons/bi";
 import { FaCog } from "react-icons/fa";
 
 export const SidebarData: SidebarItem[] = [
   {
-    title: "Overview",
+    title: "OVERVIEW",
     path: "/dash",
     icon: <AiOutlineHome />,
     iconClosed: <AiFillCaretDown />,
@@ -25,8 +25,13 @@ export const SidebarData: SidebarItem[] = [
     ],
   },
   {
-    title: "configuration",
+    title: "CONFIG",
     path: "/configuration",
     icon: <FaCog />,
+  },
+  {
+    title: "TESTING",
+    path: "/testing",
+    icon: <BiTestTube />,
   },
 ];

@@ -2,13 +2,9 @@ import * as React from "react";
 import styled from "styled-components";
 
 const TagComponent = styled.div`
-  width: 100%;
-  padding: 80px 16px;
-  margin: 0px auto;
+  min-height: 100vh;
   box-sizing: border-box;
-  color: white;
   text-align: center;
-  margin-bottom: 160px;
   background-color: gray;
 `;
 

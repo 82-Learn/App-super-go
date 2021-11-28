@@ -11,10 +11,12 @@ const SidebarLink = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
 `;
 
-const SidebarLabel = styled.span``;
+const SidebarLabel = styled.span`
+  padding: 5px 5px;
+  line-height: 1.8;
+`;
 
 export const Submenu: FC<SidebarLinkProps> = ({ item }) => {
   return (
