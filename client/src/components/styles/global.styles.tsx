@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         margin-top: 20px;
         background-size: 100%;
         background-color: black;
+    
         
         
     }
@@ -27,6 +28,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased;
     margin-bottom:50px;
+    
 
   }
   body, input, button {

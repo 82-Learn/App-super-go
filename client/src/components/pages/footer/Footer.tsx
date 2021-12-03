@@ -6,7 +6,6 @@ const StyledFooter = styled.div`
   min-height: 10%;
   /* equal to footer height */
   margin-bottom: -142px;
-  border-radius: 10px;
 `;
 
 const Row = styled.div`
@@ -47,11 +46,6 @@ const FooterLink = styled.div`
   text-align: center;
   cursor: pointer;
   padding: 8px 8px;
-  background-color: black;
-
-  &:hover {
-    background-color: #ff6600;
-  }
 `;
 
 const Footer = () => (

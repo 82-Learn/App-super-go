@@ -7,10 +7,20 @@ type SidebarLinkProps = {
   item: SidebarItem;
 };
 
-const SidebarLink = styled.div`
+const SidebarLink = styled(Link)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 3.75rem;
+  font-size: 1.125rem;
+  padding: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
 `;
 
 const SidebarLabel = styled.span`
@@ -21,7 +31,7 @@ const SidebarLabel = styled.span`
 export const Submenu: FC<SidebarLinkProps> = ({ item }) => {
   return (
     <>
-      <SidebarLink>
+      <SidebarLink to={item.path}>
         <div>
           {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>

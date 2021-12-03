@@ -13,6 +13,7 @@ const TagComponent = styled.div`
   text-align: center;
   margin-top: -18px;
   margin-bottom: 500px;
+  height: 90vh;
 `;
 
 const Header = styled.h1`
@@ -95,7 +96,7 @@ interface Post {
   last_name: string;
 }
 
-const Main = () => {
+const Dash = () => {
   const [posts, setPosts] = useState<Post[]>([]);
 
   const [loading, setLoading] = useState(false);
@@ -120,22 +121,19 @@ const Main = () => {
   return (
     <TagComponent>
       <Header>Dashboard</Header>
-    
-      
-        <div>
-          <h1>Outline</h1>
-          <ul>
-            {posts.map((post) => (
-              <>
-                <li key={post.id}>{post.first_name}</li>
-                <li key={post.id}>{post.last_name}</li>
-              </>
-            ))}
-          </ul>
-        </div>
-     
+
+      <div>
+        <ul>
+          {posts.map((post) => (
+            <>
+              <li key={post.id}>{post.first_name}</li>
+              <li key={post.id}>{post.last_name}</li>
+            </>
+          ))}
+        </ul>
+      </div>
     </TagComponent>
   );
 };
 
-export default Main;
+export default Dash;

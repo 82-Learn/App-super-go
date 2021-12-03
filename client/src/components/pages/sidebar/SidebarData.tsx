@@ -26,7 +26,7 @@ export const SidebarData: SidebarItem[] = [
   },
   {
     title: "CONFIG",
-    path: "/configuration",
+    path: "/config",
     icon: <FaCog />,
   },
   {

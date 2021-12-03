@@ -14,7 +14,7 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
   bottom: 0;
   width: 20%;
   height: 100%;
-  min-width: 100px;
+  min-width: 200px;
   background-color: #ff6600;
   opacity: 0.9;
   z-index: 999;
