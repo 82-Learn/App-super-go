@@ -12,7 +12,7 @@ var DB *gorm.DB
 var err error
 
 func InitialMigration() {
-	DB, err = gorm.Open("postgres", "host=localhost port=5432 user=postgres dbname=App-DB sslmode=disable password=Mick45")
+	DB, err = gorm.Open("postgres", "host=localhost port="" user=postgres dbname="" sslmode=disable password=""")
 	if err != nil {
 		fmt.Println(err.Error())
 		panic("Cannot connect to Database")
